@@ -5,13 +5,13 @@
             namespace GerenciadorEventos
     {
             class Program
-        {
+            {
             static List<Evento> eventos = new List<Evento>();
 
             static void Main(string[] args)
 {
             while (true)
-        {
+            {
                 Console.Clear();
                 Console.WriteLine("Sistema de Gerenciamento de Eventos\n");
                 Console.WriteLine("1. Cadastrar evento");
@@ -50,9 +50,9 @@
                 Console.Write("\nPressione qualquer tecla para continuar...");
                 Console.ReadKey();
              }
-    }
+}
             static void CadastrarEvento()
-    {
+{
                 Console.Write("Título do evento: ");
             string? titulo = Console.ReadLine();
 
@@ -111,9 +111,9 @@
             {
                 Console.WriteLine("Ocorreu um erro ao cadastrar o evento: " + ex.Message);
             }
-    }
+}
             static void ListarEventos()
-    {
+{
                 Console.Clear();
                 Console.WriteLine("Lista de eventos:\n");
 
@@ -135,10 +135,10 @@
                 Console.WriteLine($"Contato responsável: {evento.ContatoResponsavel?.Nome}");
                 Console.WriteLine("---------------------------------");
             }
-    }
+}
 
             static void ListarEventosPorPeriodo()
-    {
+{
                 Console.Clear();
                 Console.WriteLine("1. Pesquisar eventos dentro de um período");
                 Console.WriteLine("2. Escolher uma data específica");
@@ -226,9 +226,9 @@
             break;
             }
     
-    }
+}
             static void EditarEvento()
-    {
+{
                 Console.Write("Digite o ID do evento para editar: ");
             string? id = Console.ReadLine();
 
@@ -397,7 +397,7 @@
                 escritor.WriteLine("Contato Responsável: " + evento.ContatoResponsavel.Nome + " - " + evento.ContatoResponsavel.Telefone);
             }
 }
-        }
+            }
     }
 
  
